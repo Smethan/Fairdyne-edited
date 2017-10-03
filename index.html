@@ -57,6 +57,12 @@
 
 	  ga('create', 'UA-45012430-7', 'auto');
 	  ga('send', 'pageview');
+	  $("canvas").keypress(function(event)) {
+	  	if (event.which == 77) {
+	  		$("#term_demo").hide();
+	  	}
+	  }
+
 	  jQuery(function($, undefined) {
     	$('#term_demo').terminal(function(command) {
         	if (command !== '') {

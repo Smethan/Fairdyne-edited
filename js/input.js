@@ -18,12 +18,6 @@ function handleKeyInput(key, dir) {
 			break;
 		case "gameplay":
 			if (dir == "down") gamestate.handleInput(key);
-			if (dir == "down" && key == "M") {
-				$(#term_demo).show();
-			}
-			if (dir == "down" && key == "N") {
-				$(#term_demo).hide();
-			}
 			break;
 	}
 
